@@ -1,0 +1,575 @@
+﻿body,html{
+	width: 100%;
+	height: 100%;
+	margin:0;
+}
+body{
+	border-top: 6px solid #7e7e7e;
+	background-image: url(../image/Homepage.png);
+	}
+.main{
+	margin: 0 auto;
+	width: 900px;
+	height: 1200px;
+}
+.main>*{
+	width: 100%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.header{
+	padding: 25px 0;
+}
+.header input{
+	height: 30px;
+	box-sizing: border-box;
+}
+.header input[type="text"]{
+	border: 1px solid #e7e7e7e7;
+	padding-left: 5px;
+	background-color: #f3f3f3;
+	outline: none;
+}
+.header input[type="button"]{
+	color: white;
+	background-color: #29c5e6;
+	margin-top: -1px;
+}
+.menu{
+	height: 40px;
+	border:1px solid #e7e7e7;
+	background-color: #f3f3f3;
+}
+.menu>ul{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin-top: 10px;
+}
+.menu>ul>div{
+	width: 12.5%;
+	height: 40px;
+	float: left;
+	margin-top: -10px;
+}
+.menu>ul>div>li{
+	margin-top: 10px;
+	list-style: none;
+	text-align: center;
+}
+.menu>ul>div>li>a{
+	text-decoration: none;
+	color: #b2b2b2;
+	text-transform: uppercase;
+}
+
+/*при наведении на меню*/
+.home:hover{
+	background-color: #29c5e6;
+}
+.home:hover a{
+color: #ffffff;
+}
+.about:hover{
+	background-color: #29c5e6;
+}
+.about:hover a{
+color: #ffffff;
+}
+.servis:hover{
+	background-color: #29c5e6;
+}
+.servis:hover a{
+color: #ffffff;
+}
+.partners:hover{
+	background-color: #29c5e6;
+}
+.partners:hover a{
+color: #ffffff;
+}
+.customers:hover{
+	background-color: #29c5e6;
+}
+.customers:hover a{
+color: #ffffff;
+}
+.projects:hover{
+	background-color: #29c5e6;
+}
+.projects:hover a{
+color: #ffffff;
+}
+.careers:hover{
+	background-color: #29c5e6;
+}
+.careers:hover a{
+color: #ffffff;
+}
+.contact:hover{
+	background-color: #29c5e6;
+}
+.contact:hover a{
+color: #ffffff;
+}
+
+/*Сдайдер*/
+.slider{
+	width: 900px;
+	height: 270px;
+	background-color: #e2e2e2;
+	overflow: hidden;
+}
+
+.konteiner{
+	width: 5600px;
+	height: 270px;
+	position: relative;
+	animation: sliderRun 30s 3s infinite;
+}
+/*первый слайдер моря*/
+.sea1, .sea2, .sea3, .sea4, .sea5{
+	width: 900px;
+	height: 270px;
+	float: left;
+}
+/*по первому слайду и свойства для футболки и надписи для последующих*/
+.sea1{
+	background: url('http://www.grekomania.ru/images/greek-articles/other/big/288_morya-grecii-4.jpg') no-repeat;
+	background-size: 900px 270px;
+}
+.sea1>img:nth-child(1),  .sea2>img:nth-child(1),  .sea3>img:nth-child(1),
+.sea4>img:nth-child(1),  .sea5>img:nth-child(1){
+	margin-top: 40px;
+	margin-left: 50px;
+	display: block;
+	float: left;
+}
+/*второй слайдер*/
+
+.sea2{
+	background: url('http://file.mobilmusic.ru/d8/51/f2/348817.jpg') no-repeat;
+	background-size: 900px 270px;
+}
+/*третий слайдер*/
+
+.sea3{
+	background: url('http://www.o-prirode.com/_ph/34/813760289.jpg') no-repeat;
+	background-size: 900px 270px;
+}
+/*четвертый слайдер*/
+
+.sea4{
+	background: url('http://www.sunhome.ru/UsersGallery/wallpapers/147/18170832.jpg') no-repeat;
+	background-size: 900px 270px;
+}
+/*пятый слайдер*/
+
+.sea5{
+	background: url('http://www.grekomania.ru/images/greek-articles/other/big/288_morya-grecii-4.jpg') no-repeat;
+	background-size: 900px 270px;
+}
+
+
+@keyframes sliderRun{
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	20%{
+		left: -900px;
+		top: 0px;
+	}
+	40%{
+		left: -1800px;
+		top: 0px;
+	}
+	60%{
+		left: -2700px;
+		top: 0px;
+	}
+	100%{
+		left: -3600px;
+		top: 0px;
+	}
+}
+/*Переключатели ниже слайдера*/
+.sli_per{
+	width: 900px;
+	height: 55px;
+	background-color: #f3f3f3;
+}
+.slider>.one1{
+	width: 265px;
+	height: 55px;
+	margin-top: 270px;
+	margin-left: 5px;
+	position: absolute;
+}
+.slider>.two1{
+	width: 265px;
+	height: 55px;
+	margin-top: 270px;
+	margin-left: 235px;
+	position: absolute;
+}
+.slider>.three1{
+	width: 265px;
+	height: 55px;
+	margin-top: 270px;
+	margin-left: 470px;
+	position: absolute;
+}
+.slider>.four1{
+	width: 265px;
+	height: 55px;
+	margin-top: 270px;
+	margin-left: 660px;
+	position: absolute;
+}
+
+.one1:active~.konteiner{
+	margin-left: 0px;
+	animation-name: none;
+}
+.two1:active~.konteiner{
+	margin-left: -900px;
+	animation-name: none;
+}
+.three1:active~.konteiner{
+	margin-left: -1800px;
+	animation-name: none;
+}
+.four1:active~.konteiner{
+	margin-left: -2700px;
+	animation-name: none;
+}
+
+/*ниже слайдера*/
+.sli_per1{
+	width: 225px;
+	height: 55px;
+	float: left;
+	margin-left: -1px; 
+}
+.sli_per1>.one{
+	background-color: #8f8f8f;
+	display: block;
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	margin-top: 15px;
+}
+.one>img{
+	margin-top: 5px;
+}
+.sli_per1>.two>a{
+	height: 25px;
+	color: #8f8f8f;
+	font-size: 15px;
+	display: block;
+	margin-top: 20px;
+	padding-left: 35px;
+	text-decoration: none;
+}
+
+/*при наведении ниже слайдера*/
+.one1:hover .one{
+	background-color: #29c5e6;
+}
+.one1:hover .two>a{
+color: #29c5e6;
+}
+.two1:hover .one{
+	background-color: #29c5e6;
+}
+.two1:hover .two>a{
+color: #29c5e6;
+}
+.three1:hover .one{
+	background-color: #29c5e6;
+}
+.three1:hover .two>a{
+color: #29c5e6;
+}
+.four1:hover .one{
+	background-color: #29c5e6;
+}
+.four1:hover .two>a{
+color: #29c5e6;
+}
+
+/*Блок контента*/
+.content{
+	margin-top: 40px;
+}
+.section_one{
+	width: 450px;
+	height: 210px;
+	float: left;
+	margin-left: -2px;
+}
+
+.section_two{
+	width: 300px;
+	height: 210px;
+	float: left;
+	margin-left: -2px;
+}
+.kvadr{
+	width: 20px;
+	height: 20px;
+	background-color: #29c5e6;
+	float: left;
+}
+.section_one>.text{
+	width: 430px;
+	height: 20px;
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+.foto{
+	width: 140px;
+	height: 140px;
+	background-color: #e2e2e2;
+	border: 1px solid #cccccc;
+	margin: 15px;
+	float: left;
+}
+.section_one>.text1{
+	width: 450px;
+	height: 125px;
+	line-height: 18px;
+	margin-top: 15px;
+}
+
+.section_one>p{
+	margin-top: -1px;
+}
+.section_one a, .section_two a{
+	color: #6e6e6e;
+}
+.section_two>.text{	/*текст для нижних трех блоков*/
+	width: 280px;
+	height: 20px;
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+.section_two{
+	margin-top: 40px;
+}
+
+.section_two>.text1{
+	width: 300px;
+	height: 140px;
+	line-height: 18px;
+	margin-top: 15px;
+}
+.section_two>.foto1{
+	width: 40px;
+	height: 40px;
+	margin-top: 15px;
+	margin-left: 5px;
+	background-color: #e2e2e2;
+	float: left;
+}
+.section_two>.text3{
+	width: 250px;
+	height: 40px;
+	margin-top: 15px;
+	margin-left: 50px;
+	font-size: 12px;
+}
+/*блок штриховки*/
+.section_one>.text>.shtrih_one{
+	width: 190px;
+	height: 20px;
+	padding-right: 15px;
+	float: right;
+}
+.section_one>.text>.shtrih_two{
+	width: 185px;
+	height: 20px;
+	float: right;
+}
+.section_two>.text>.shtrih_three{
+	width: 165px;
+	height: 20px;
+	padding-right: 15px;
+	float: right;
+}
+.section_two>.text>.shtrih_four{
+	width: 140px;
+	height: 20px;
+	padding-right: 15px;
+	float: right;
+}
+.section_two>.text>.shtrih_five{
+	width: 110px;
+	height: 20px;
+	float: right;
+}
+.carusel>.text>.shtrih_six{
+	width: 760px;
+	height: 20px;
+	float: right;
+}
+/*ТРЕТЬЯ СЕКЦИЯ КАРУСЕЛЬ*/
+.carusel{
+	width: 900px;
+	height: 160px;
+	margin-top: 540px;
+}
+.carusel>.text{
+	width: 880px;
+	height: 20px;
+	padding-left: 30px;
+	font-size: 20px;
+}
+.carusel>.text>.shtrih_six{
+	width: 740px;
+	height: 20px;
+}
+.carusel>img{
+	margin-top: 20px;
+}
+
+/*Подвал сайта*/
+.footer{
+	width: 100%;
+	height: 150px;
+	background-color: #7e7e7e;
+}
+.all_footer{
+	width: 900px;
+	height: 150px;
+	margin: 0 auto;
+}
+.all_footer>.podv1{
+	width: 300px;
+	height: 150px;
+	float: left;
+}
+
+.podv1>.twitter_f{
+	width: 300px;
+	height: 25px;
+	color: #f6f6f6;
+	font-size: 20px;
+	border-bottom: 3px solid #919191;
+}
+.podv1>div>a{
+	color: #b1abab;
+}
+.podv1>div:nth-child(2){
+	margin-top: 10px;
+	color: #b4aeae;
+}
+.podv1>div:nth-child(3){
+	width: 300px;
+	margin-top: 10px;
+	color: #d0d0d0;
+}
+/*второй блок подвала*/
+.all_footer>.podv2{
+	width: 150px;
+	height: 150px;
+	margin-left: 10px;
+	float: left;
+}
+.podv2>.sitmap{
+	width: 150px;
+	height: 25px;
+	color: #f6f6f6;
+	font-size: 20px;
+	margin-top: -1px;
+	border-bottom: 3px solid #919191;
+}
+.spis_f{
+	width: 75px;
+	height: 120px;
+	float: left;
+}
+
+/*отмена эффектов ссылок*/
+.spis_f>div>a{
+	text-decoration: none;
+	color: #dbdbdb;
+}
+.spis_t{
+	width: 70px;
+	height: 100px;
+	margin-left: 80px;
+}
+.spis_t>div>a{
+	text-decoration: none;
+	color: #dbdbdb;
+}
+.spis_f>div{
+	color: #dbdbdb;
+	margin-top: 10px;
+	font-size: 20px;
+}
+.spis_t>div{
+	color: #dbdbdb;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+/*Третий блок подвала*/
+.all_footer>.podv3{
+	width: 200px;
+	height: 150px;
+	margin-left: 10px;
+	float: left;
+}
+.podv3>.social{
+	width: 200px;
+	height: 25px;
+	color: #f6f6f6;
+	font-size: 20px;
+	margin-top: -1px;
+	border-bottom: 3px solid #919191;
+}
+.podv2>.icon_t{
+	width: 200px;
+	height: 120px;
+}
+.icon_t>div:nth-child(1){
+	width: 200px;
+	height: 60px;
+	margin: 0 auto;
+}
+.icon_t>div:nth-child(1)>a{
+	width: 45px;
+	height: 45px;
+	display: block;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	}
+.icon_t>div:nth-child(2)>a{
+	width: 25px;
+	height: 25px;
+	margin-left: 15px;
+	margin-top: 20px;
+	}
+.icon_t>div:nth-child(2){
+	width: 200px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+/*Последний элемент */
+.all_footer>img{
+	margin-top: 50px;
+	margin-left: 10px;
+}
